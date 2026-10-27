@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>图标 SVG 预览</title>
+<style>
+  body { margin: 0; padding: 40px 24px; background: #fff; font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+  h1 { font-size: 18px; font-weight: 600; color: #333; margin: 0 0 4px; }
+  p.tip { font-size: 13px; color: #999; margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 12px; max-width: 900px; }
+  .cell { border: 1px solid #eee; border-radius: 10px; padding: 14px 8px 10px; text-align: center; }
+  .cell:hover { border-color: #5AC64E; background: #f8fdf7; }
+  .cell img { width: 40px; height: 40px; }
+  .cell span { display: block; margin-top: 8px; font-size: 11px; color: #888; word-break: break-all; }
+</style>
+</head>
+<body>
+  <h1>图标 SVG（30 个）</h1>
+  <p class="tip">每个文件都是独立可用的 24×24 矢量 SVG，改 fill 颜色即可换色。</p>
+  <div class="grid" id="grid"></div>
+<script>
+  const names = [
+    "01-run","02-edit","03-user-add","04-chat","05-shield-check-purple","06-pin-outline",
+    "07-pin-green","08-search","09-home","10-list","11-plus-circle","12-bell-grey",
+    "13-run-2","14-plus-circle-2","15-chat-add","16-image-camera","17-image-add","18-bell-green",
+    "19-shield-check-green","20-shoe","21-basketball","22-badminton","23-film","24-dumbbell",
+    "25-lock","26-lock-2","27-heart","28-server-grey","29-server-green","30-chat-dots",
+    "31-all","32-more","33-collapse",
+    "34-tennis","35-volleyball","36-pingpong","37-skateboard",
+    "38-football","39-swim","40-cycling","41-yoga"
+  ];
+  document.getElementById("grid").innerHTML = names.map(n =>
+    `<div class="cell"><img src="./${n}.svg" alt="${n}"><span>${n}</span></div>`
+  ).join("");
+</script>
+</body>
+</html>

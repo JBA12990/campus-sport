@@ -1,0 +1,72 @@
+import Mock from "better-mock"
+
+Mock.mock(/\/api\/list$/, 'get', {
+	code: 200,
+	message: '获取成功',
+	data: [
+		{
+			id: Date.now(),
+			label: "跑步",
+			text: "周五下午5点跑步",
+			color: "rgb(237, 247, 247)",
+			when: "05-24 17:00",
+			location: "操场",
+			state: false,
+			avatar: "/static/monesy.jpg",
+			user_name: "m0NESY",
+			time: Date.now() - 10 * 60 * 1000,
+			bgColor: "rgb(200, 237, 199)",
+		},
+		{
+			id: Date.now(),
+			label: "打篮球",
+			text: "周三下午5点打篮球",
+			color: "rgb(252, 241, 231)",
+			when: "05-22 17:00",
+			location: "篮球场",
+			state: false,
+			avatar: "/static/monesy.jpg",
+			user_name: "s1mple",
+			time: Date.now() - 3 * 60 * 60 * 1000,
+			bgColor: "rgb(252, 241, 231)",
+		},
+		{
+			id: Date.now(),
+			label: "羽毛球",
+			text: "周二下午5点打羽毛球",
+			color: "rgb(234, 246, 252)",
+			when: "05-21 17:00",
+			location: "羽毛球场",
+			state: true,
+			avatar: "/static/monesy.jpg",
+			user_name: "donk",
+			time: Date.now() - 25 * 60 * 60 * 1000,
+			bgColor: "rgb(252, 241, 231)",
+		},
+		{
+			id: Date.now(),
+			label: "健身",
+			text: "周二下午2点健身",
+			color: "rgb(230, 244, 246)",
+			when: "05-24 14:00",
+			location: "健身房",
+			state: false,
+			avatar: "/static/monesy.jpg",
+			user_name: "ZywOo",
+			time: Date.now() - 30 * 60 * 1000,
+			bgColor: "rgb(230, 244, 246)"
+		}, {
+			id: Date.now(),
+			label: "健身",
+			text: "周二下午2点健身",
+			color: "rgb(230, 244, 246)",
+			when: "05-24 14:00",
+			location: "健身房",
+			state: false,
+			avatar: "/static/monesy.jpg",
+			user_name: "ZywOo",
+			time: Date.now() - 30 * 60 * 1000,
+			bgColor: "rgb(230, 244, 246)"
+		},
+	]
+})

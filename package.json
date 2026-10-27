@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "sass": "^1.105.1",
+    "vite-plugin-mock-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "better-mock": "^0.3.7",
+    "pinia": "^4.1.0"
+  }
+}

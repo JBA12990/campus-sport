@@ -1,0 +1,24 @@
+# ===== 依赖 =====
+node_modules/
+
+# ===== uni-app 构建产物 =====
+unpackage/
+
+# ===== 编辑器 / 系统 =====
+.hbuilderx/
+.DS_Store
+Thumbs.db
+
+# ===== AI 工具配置（不想公开就留着）=====
+.claude/
+
+# ===== 日志 =====
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== 本地环境变量 =====
+.env
+.env.local
+.env.*.local
